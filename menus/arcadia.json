@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle arcadia",
+        "command": "arcadia:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "arcadia",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "arcadia:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+@import "./editor.less";
+
+.arcadia {
+}
+
+arc-navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #b3b3b3;
+}
+
+arc-crumbs-list {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  height: 28px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 11px;
+
+  arc-crumb-item {
+    display: inline-block;
+    list-style: none;
+    &:before {
+      font-family: AppleGothic;
+      content: '>';
+      color: #a1a1a1;
+      padding: 0 .3rem;
+      font-size: 16px;
+      display: inline-block;
+      float: left;
+      height: 28px;
+      line-height: 28px;
+      margin-top: 3px;
+    }
+    &:first-child:before {
+      content: '';
+      padding-left: 0;
+    }
+  }
+
+  a {
+    -webkit-user-select: none;
+    user-select: none;
+    display: inline-block;
+    line-height: 30px;
+    cursor: default;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.is-blurred {
+  arc-crumbs-list {
+    li {
+      &:before {
+        color: #c7c7c7;
+      }
+    }
+    a {
+      color: #808080;
+    }
+  }
+}
